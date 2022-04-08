@@ -52,3 +52,15 @@ git init
 `git add .`
 
 `git commit -m "this is second time"`
+
+### Branch
+
+`git checkout`
+
+`git branch`
+
+`git branch Git-second-branch`
+
+`git checkout -b Branch-name`
+
+`git checkouth Branch-Name`
