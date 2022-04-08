@@ -10,7 +10,6 @@
 
 파일 삭제 `rm <file name> rmdri <folder name>`
 
-
 # Local Repo
 
 ### 버전체크
@@ -133,8 +132,6 @@ returns current branch
 >
 > abc/*
 
-
-
 # Remote Repo
 
 ### existing branch
@@ -144,7 +141,6 @@ returns current branch
 `git branch -M main`
 
 `git push -u origin main`
-
 
 ### initial branch
 
@@ -161,3 +157,61 @@ returns current branch
 `git remote add origin <github address>`
 
 `git push -u origin main`
+
+
+### Pushing history and Branches
+
+`git push origin main -u`
+
+`git push`
+
+`git branch -a`
+
+
+### Remote Branch
+
+`git branch -r`
+
+### Track Remote Branch
+
+`git fetch origin`
+
+`git branch -r`
+
+`git branch --track local-branch-name origin/target-remote-branch`
+
+`git pull`
+
+
+### Important commands
+
+`git remote -v`
+
+`git remote show origin`
+
+`git branch -vv`
+
+### Upstream
+
+`git push -u origin branch/name`
+
+### Delete remote branch
+
+`git branch --delete --remote origin/branch-name`
+
+`git remote-ls`
+
+`git push origin --delete branch-name`
+
+`git reset --hard HEAD~1`
+
+`git push origin main`
+
+
+### Fork Repo
+
+fork
+
+`git clone <git repository address>`
+
+`git remote add upstream <git repository address>`
