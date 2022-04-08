@@ -45,8 +45,10 @@ git init
 `git branch -m Git-test-branch`
 
 
-### Add
+### Add & Commit
 
 `git add <file name>`
 
 `git add .`
+
+`git commit -m "this is second time"`
