@@ -10,7 +10,8 @@
 
 파일 삭제 `rm <file name> rmdri <folder name>`
 
----
+
+# Local Repo
 
 ### 버전체크
 
@@ -52,15 +53,11 @@ git init
 
 ---
 
-
-
 ### Merging Branch
 
 메인 브랜치 체크아웃
 
 `git merge Git-third-branch`
-
-
 
 ### HEAD
 
@@ -69,7 +66,6 @@ head = current branch
 `cat .git/HEAD`
 
 returns current branch
-
 
 ### Detached HEAD
 
@@ -118,3 +114,50 @@ returns current branch
 `git reset head HEAD~1`
 
 ### Delete Branch
+
+`git branch -D <branch-name>`
+
+### .gitignore
+
+> // 무시할 파일 이름
+>
+> a.txt
+>
+> *.txt
+>
+> *.log
+>
+> !main.js
+
+> // 무시할 폴더 이름
+>
+> abc/*
+
+
+
+# Remote Repo
+
+### existing branch
+
+`git remote add origin <github address>`
+
+`git branch -M main`
+
+`git push -u origin main`
+
+
+### initial branch
+
+`echo "basic" >> readme.md`
+
+`git init`
+
+`git add readme.md`
+
+`git commit -m "first commit"`
+
+`git branch -M main`
+
+`git remote add origin <github address>`
+
+`git push -u origin main`
